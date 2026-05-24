@@ -38,17 +38,27 @@
                 </div>
             </nav>
         </header>
-        <main>
-             <!-- Search bar -->
-    <input type="text" id="searchInput" placeholder="Search cart items..." onkeyup="searchCart()">
+       <main class="container my-4">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h3 class="card-title">🛒 Your Cart</h3>
 
-    <!-- Cart list -->
-    <ul id="cartList"></ul>
+      <!-- Search bar -->
+      <input type="text" id="searchInput" class="form-control mb-3" 
+             placeholder="Search cart items..." onkeyup="searchCart()">
 
-    <!-- Total -->
-    <p class="total">Total: $<span id="cartTotal">0.00</span></p>
+      <!-- Cart list -->
+      <ul id="cartList" class="list-group mb-3"></ul>
 
-        </main>
+      <!-- Total -->
+      <p class="fw-bold">Total: $<span id="cartTotal">0.00</span></p>
+
+      <!-- Clear Cart button -->
+      <button class="btn btn-danger" onclick="clearCart()">Clear Cart</button>
+    </div>
+  </div>
+</main>
+
         <footer>
             <p>&copy; 2026 Lass Skincare. All rights reserved</p>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
