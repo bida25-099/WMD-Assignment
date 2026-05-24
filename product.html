@@ -95,6 +95,20 @@
             <p>&copy; 2026 Lass Skincare. All rights reserved</p>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+         <script>
+  function addToCart(productName, price) {
+    // Get existing cart or create new
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Add new product
+    cart.push({ name: productName, price: price });
+
+    // Save back to localStorage
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert(productName + " added to cart!");
+  }
+</script>
         </footer>
     </body>
 </html>
