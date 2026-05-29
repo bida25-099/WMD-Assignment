@@ -63,8 +63,8 @@ main a[href="mailto:"]{
 }
 .card-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-around; /* spreads them evenly */
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
     margin-top: 20px;
 }
 
