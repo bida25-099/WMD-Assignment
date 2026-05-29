@@ -61,3 +61,35 @@ main a[href="mailto:"]{
     color: #315483;
     font-weight: bold;
 }
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    width: 220px;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+}
+
+.card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+.card a:hover {
+    text-decoration: underline;
+}
