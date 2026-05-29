@@ -80,6 +80,20 @@
     });
 
     cartTotal.textContent = total.toFixed(2);
+   // Clear Cart function
+  function clearCart() {
+    // Remove cart data from localStorage
+    localStorage.removeItem("cart");
+
+    // Clear the list in the UI
+    cartList.innerHTML = "";
+
+    // Reset total
+    cartTotal.textContent = "0.00";
+
+    // Reset cart array
+    cart = [];
+  }
   </script>
         </footer>
     </body>
